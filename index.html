@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavin R K — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ EASTER EGG TERMINAL ░░ -->
+  <div id="terminal-overlay" class="hidden">
+    <div id="terminal-box">
+      <div class="terminal-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">//ACCESS TERMINAL</span>
+        <button id="close-terminal" title="close">✕</button>
+      </div>
+      <div id="terminal-output">
+        <p class="t-line">> ---CLASSIFIED---</p>
+        <p class="t-line">> ♨︎_♨︎</p>
+        <p class="t-line t-yellow">> AGENT: KAVIN RK</p>
+        <p class="t-line">> STATUS: <span class="t-green">ACTIVE</span></p>
+        <p class="t-line">> CLEARANCE: Java Full Stack Developer</p>
+        <p class="t-line">> MISSION: Survive the bug apocalypse.</p>
+        <p class="t-line t-dim">> You found the Easter egg. Nice work, agent. 🐝</p>
+        <p class="t-line t-dim">> Type 'help' for commands.</p>
+      </div>
+      <div class="terminal-input-row">
+        <span class="prompt">> </span>
+        <input id="terminal-input" type="text" placeholder="type a command..." autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-logo">KRK<span class="dot-accent">.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certs</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+      <span id="theme-icon">☀️</span>
+    </button>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <div class="hero-bg-blur"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="glass-ring"></div>
+        <img src="IMG_20260110_102319515_HDR_PORTRAIT~2.jpg" alt="Kavin R K" class="hero-photo" id="hero-photo" />
+        <div class="photo-badge">KAVIN</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">KAVIN <span class="accent">RK</span></h1>
+        <p class="hero-role">Java Full Stack Developer<span class="cursor-blink">|</span></p>
+        <p class="hero-summary">ECE undergraduate at M. Kumarasamy College of Engineering, passionate about software development, databases, and wireless communication.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="glass-card about-card">
+        <div class="about-grid">
+          <div class="about-info">
+            <p>I'm a 3rd-year ECE student with a strong interest in backend development, SQL, and Java. I've worked on real-world projects ranging from obstacle-detection hardware to full-stack insurance management systems.</p>
+            <div class="info-rows">
+              <div class="info-row"><span class="info-label">📍 Location</span><span>Karur, Tamil Nadu</span></div>
+              <div class="info-row"><span class="info-label">📅 DOB</span><span>06 Dec 2005</span></div>
+              <div class="info-row"><span class="info-label">🎓 Degree</span><span>B.E. ECE (2023–2027)</span></div>
+              <div class="info-row"><span class="info-label">🗣️ Languages</span><span>Tamil, English</span></div>
+              <div class="info-row"><span class="info-label">🌍 Hobbies</span><span>Traveling & Exploring</span></div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num">2027</span>
+              <span class="stat-label">Graduating</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🍵</div>
+          <h3>Java</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:66%"></div></div>
+        </div>
+       <!-- <div class="glass-card skill-card">
+          <div class="skill-icon">📡</div>
+          <h3>Antenna Design (HFSS)</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+        </div>-->
+        <div class="glass-card skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>PCB Design</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:39%"></div></div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>MATLAB & Simulink</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:60%"></div></div>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🛡️</div>
+          <h3>Network Security</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:48%"></div></div>
+        </div>
+      </div>
+
+      <div class="soft-skills">
+        <h3 class="sub-title">Soft Skills</h3>
+        <div class="tag-cloud">
+          <span class="tag">🤝 Teamwork</span>
+          <span class="tag">🔄 Adaptability</span>
+          <span class="tag">👑 Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="glass-card project-card">
+          <div class="project-icon">👓</div>
+          <div class="project-tag">Hardware · IoT</div>
+          <h3>Obstacle Detection Smart Glasses</h3>
+          <p>Wearable smart glasses for visually impaired individuals. Uses ultrasonic sensors to detect obstacles and delivers real-time audio alerts for safe, independent navigation.</p>
+          <div class="project-meta">
+            <span class="meta-badge">Team of 3</span>
+            <span class="meta-badge">Circuit Design</span>
+            <span class="meta-badge">Ultrasonic</span>
+          </div>
+        </div>
+
+        <div class="glass-card project-card featured">
+          <div class="project-icon">🚗</div>
+          <div class="project-tag">Backend · SQL</div>
+          <h3>Vehicle Insurance System</h3>
+          <p>Full-stack system to manage vehicle insurance workflows — registration, policy applications, renewals, and claim filing. Backed by a secure relational database to reduce paperwork and improve efficiency.</p>
+          <div class="project-meta">
+            <span class="meta-badge">Team of 2</span>
+            <span class="meta-badge">Backend Lead</span>
+            <span class="meta-badge">Java</span>
+            <span class="meta-badge">SQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CERTIFICATIONS ░░ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications <span class="accent">&amp; Awards</span></h2>
+      <div class="cert-grid">
+        <div class="glass-card cert-card">
+          <span class="cert-icon">🔐</span>
+          <div>
+            <h4>Network Security</h4>
+            <p>NPTEL — Apr 2026</p>
+          </div>
+        </div>
+        <div class="glass-card cert-card">
+          <span class="cert-icon">💾</span>
+          <div>
+            <h4>SQL Basics</h4>
+            <p>HackerRank</p>
+          </div>
+        </div>
+        <div class="glass-card cert-card">
+          <span class="cert-icon">🏭</span>
+          <div>
+            <h4>Intro to Industry 4.0 &amp; IIoT</h4>
+            <p>NPTEL</p>
+          </div>
+        </div>
+        <div class="glass-card cert-card">
+          <span class="cert-icon">🛡️</span>
+          <div>
+            <h4>Intro to Cybersecurity</h4>
+            <p>Cisco Networking Academy</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title" style="margin-top:2.5rem;">Achievements</h3>
+      <div class="cert-grid">
+        <div class="glass-card cert-card">
+          <span class="cert-icon">📊</span>
+          <div>
+            <h4>Power BI Workshop</h4>
+            <p>M. Kumarasamy College of Engineering</p>
+          </div>
+        </div>
+        <div class="glass-card cert-card">
+          <span class="cert-icon">🌐</span>
+          <div>
+            <h4>Quality Checking Intern</h4>
+            <p>Vikram Solar — 3 Weeks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+ <!-- ░░ CONTACT ░░ -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+    <div class="glass-card contact-card">
+      <div class="contact-links">
+
+        <a href="tel:+919791872456" class="contact-item glass-card">
+          <span class="contact-icon phone-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="6" fill="#25D366"/>
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="white"/>
+            </svg>
+          </span>
+          <div>
+            <span class="contact-type">Phone</span>
+            <span class="contact-val">+91 97918 72456</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="mailto:ezhilkathir152@gmail.com" class="contact-item glass-card">
+          <span class="contact-icon gmail-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="6" fill="#fff"/>
+              <path d="M4 6h16v12H4z" fill="#f1f1f1"/>
+              <path d="M4 6l8 7 8-7" stroke="#EA4335" stroke-width="1.5" fill="none"/>
+              <path d="M4 6v12h3V9.5L12 13l5-3.5V18h3V6" fill="#4285F4"/>
+              <path d="M4 6l8 7 8-7H4z" fill="#EA4335"/>
+              <path d="M4 18h3V9.5L4 6v12z" fill="#34A853"/>
+              <path d="M17 9.5V18h3V6l-3 3.5z" fill="#FBBC05"/>
+            </svg>
+          </span>
+          <div>
+            <span class="contact-type">Email</span>
+            <span class="contact-val">ezhilkathir152@gmail.com</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://linkedin.com/in/kavin-rk-0623" target="_blank" class="contact-item glass-card">
+          <span class="contact-icon linkedin-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="6" fill="#0A66C2"/>
+              <path d="M7 9H5v8h2V9zm-1-1a1 1 0 110-2 1 1 0 010 2zm3 1h1.9v1.1h.027C11.24 9.4 12.18 9 13.3 9c2.12 0 2.7 1.4 2.7 3.2V17h-2v-4.3c0-.8-.013-1.9-1.15-1.9-1.15 0-1.33.9-1.33 1.83V17H10V9z" fill="white"/>
+            </svg>
+          </span>
+          <div>
+            <span class="contact-type">LinkedIn</span>
+            <span class="contact-val">kavin-rk-0623</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/Kavin-shree" target="_blank" class="contact-item glass-card">
+          <span class="contact-icon github-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="6" fill="#24292e"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58 4 4 7.58 4 12c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.17-.88-1.17-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.86.86 2.31.66.07-.51.28-.86.5-1.06-1.77-.2-3.63-.89-3.63-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.69 7.69 0 0112 8.41c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38C17.71 18.54 20 15.54 20 12c0-4.42-3.58-8-8-8z" fill="white"/>
+            </svg>
+          </span>
+          <div>
+            <span class="contact-type">GitHub</span>
+            <span class="contact-val">Kavin-shree</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ░░ FOOTER ░░ -->
+  <footer id="footer">
+    <p>© 2026 Kavin R K — Crafted with ☕ &amp; 🐝</p>
+    <!-- Hidden Easter egg trigger: click the bee 5 times -->
+    <span id="bee-trigger" title="🐝">🐝</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
